@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    cursor: url('custom.svg'), auto;
+    cursor: url('icons8-circle-100.png'), auto;
     background: rgb(27, 27, 27);
 }
 
