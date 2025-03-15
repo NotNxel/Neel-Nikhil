@@ -353,6 +353,23 @@ url("https://static.wixstatic.com/ufonts/c79f9d_b7c1b5ecc22540718679c93c5a404a7d
 
 </head>
 <body class='' >
+	<script>
+    const innerCursor = document.querySelector('.inner-cursor');
+    const outerCursor = document.querySelector('.outer-cursor');
+
+    document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        // Move both cursors to follow the mouse
+        innerCursor.style.left = `${mouseX}px`;
+        innerCursor.style.top = `${mouseY}px`;
+
+        outerCursor.style.left = `${mouseX}px`;
+        outerCursor.style.top = `${mouseY}px`;
+    });
+</script>
+
 <div class="inner-cursor"></div>
 <div class="outer-cursor"></div>
 <script>
