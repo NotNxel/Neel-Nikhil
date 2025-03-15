@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    //cursor: none;
+    cursor: url('icons8-circle-100.png');
     background: rgb(27, 27, 27);
 }
 
