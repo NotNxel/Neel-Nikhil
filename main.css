@@ -1,17 +1,31 @@
+body {
+    margin: 0;
+    cursor: none; /* Hides the default cursor */
+}
+
 .inner-cursor,
 .outer-cursor {
     position: fixed;
-    left: 10px;
+    left: 0;
+    top: 0;
     transform: translate(-50%, -50%);
     pointer-events: none;
     transition: background-color 0.3s, border-color 0.3s;
-    mix-blend-mode: difference;
-    /* Blend mode to invert colors */
+    mix-blend-mode: difference; /* Invert colors */
 }
+
 .outer-cursor {
     width: 30px;
     height: 30px;
-    border: 1px solid var(--cursor-color);
+    border: 1px solid var(--cursor-color, black); /* Default cursor color */
     border-radius: 50%;
-    transition: 0.1s;
+    transition: 0.1s;
+}
+
+.inner-cursor {
+    width: 10px;
+    height: 10px;
+    background-color: var(--cursor-color, black); /* Default inner cursor color */
+    border-radius: 50%;
+    pointer-events: none;
 }
