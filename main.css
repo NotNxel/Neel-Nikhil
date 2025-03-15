@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh;
-    cursor: url('cursorr.png'), auto;
+    cursor: url('cursor.png'), auto;
     background: rgb(27, 27, 27);
 }
 
